@@ -29,17 +29,17 @@ VALUES   ('1', 'Eleicao presidencial', 'Sao Paulo',     '1', 'Centro, Alemao', '
          ('7', 'Plebiscito regional',  'Salvador',      '7', 'Bairro Amorin',  'BA', 'Brasil', '23456133', 'Avenida principal, 789', '2024-01-10', '2024-01-15')
 
 -- 4 funcionando
-INSERT INTO candidato (id_candidato, eleicao_id_eleicao, cpf_candidato, nome_candidato, rg_candidato, data_nasc_candidato, sexo_candidato, zona_candidato, cidade_candidato, bairro_candidato, endereco_candidato, nacionalidade_candidato, mae_candidato, pai_candidato, cep_candidato)
-VALUES ('1',  '1',  '12345678900',  'Ana Silva',       '987654321',   '1990-05-10',  'F',   '1234',   'Sao Paulo',       'Centro',            'Rua das Flores, 123',         'Brasil',    'Maria Silva',        'Joao Silva',         '01234567'),
-       ('2',  '2',  '98765432100',  'Lucas Santos',    '123456789',   '1985-09-15',  'M',   '5678',   'Rio de Janeiro',  'Copacabana',        'Avenida das Palmeiras, 456',  'Brasil',    'Ana Santos',         'Carlos Santos',      '04567890'),
-       ('3',  '3',  '45678912300',  'Sofia Oliveira',  '789654321',   '1992-07-20',  'F',   '9012',   'Belo Horizonte',  'Savassi',           'Rua Principal, 789',          'Brasil',    'Laura Oliveira',     'Pedro Oliveira',     '06789012'),
-       ('4',  '4',  '32165498700',  'Gabriel Almeida', '654987321',   '1988-12-05',  'M',   '3456',   'Salvador',        'Barra',             'Avenida do Mar, 321',         'Brasil',    'Isabela Almeida',    'André Almeida',      '02345678'),
-       ('5',  '5',  '65432198700',  'Laura Costa',     '789123456',   '1995-03-25',  'F',   '7890',   'Fortaleza',       'Aldeota',           'Rua das Estrelas, 987',       'Brasil',    'Carolina Costa',      'Rodrigo Costa',      '05678901'),   
-       ('6',  '6',  '11223432998',  'Pedro Pereira',   '321456987',   '1980-08-15',  'M',   '2345',   'Recife',          'Boa Viagem',        'Rua das Oliveiras, 789',      'Brasil',    'Gabriela Pereira',   'Thiago Pereira',     '03456789'),
-       ('7',  '7',  '98732165400',  'Maria Fernandes', '456123789',   '1997-11-12',  'F',   '5678',   'Porto Alegre',    'Moinhos de Vento',  'Travessa das Flores, 789',    'Brasil',    'Ana Fernandes',      'Lucas Fernandes',    '04567890') 
+INSERT INTO candidato (id_candidato, eleicao_id_eleicao, cpf_candidato, nome_candidato, rg_candidato, data_nasc_candidato, sexo_candidato, zona_candidato, cidade_candidato, bairro_candidato, endereco_candidato, nacionalidade_candidato, mae_candidato, pai_candidato, cep_candidato, cd_voto_candidato)
+VALUES ('1',  '1',  '12345678900',  'Ana Silva',       '987654321',   '1990-05-10',  'F',   '1234',   'Sao Paulo',       'Centro',            'Rua das Flores, 123',         'Brasil',    'Maria Silva',        'Joao Silva',         '01234567','1'),
+       ('2',  '2',  '98765432100',  'Lucas Santos',    '123456789',   '1985-09-15',  'M',   '5678',   'Rio de Janeiro',  'Copacabana',        'Avenida das Palmeiras, 456',  'Brasil',    'Ana Santos',         'Carlos Santos',      '04567890','2'),
+       ('3',  '3',  '45678912300',  'Sofia Oliveira',  '789654321',   '1992-07-20',  'F',   '9012',   'Belo Horizonte',  'Savassi',           'Rua Principal, 789',          'Brasil',    'Laura Oliveira',     'Pedro Oliveira',     '06789012','3'),
+       ('4',  '4',  '32165498700',  'Gabriel Almeida', '654987321',   '1988-12-05',  'M',   '3456',   'Salvador',        'Barra',             'Avenida do Mar, 321',         'Brasil',    'Isabela Almeida',    'André Almeida',      '02345678','4'),
+       ('5',  '5',  '65432198700',  'Laura Costa',     '789123456',   '1995-03-25',  'F',   '7890',   'Fortaleza',       'Aldeota',           'Rua das Estrelas, 987',       'Brasil',    'Carolina Costa',      'Rodrigo Costa',      '05678901','5'),   
+       ('6',  '6',  '11223432998',  'Pedro Pereira',   '321456987',   '1980-08-15',  'M',   '2345',   'Recife',          'Boa Viagem',        'Rua das Oliveiras, 789',      'Brasil',    'Gabriela Pereira',   'Thiago Pereira',     '03456789','6'),
+       ('7',  '7',  '98732165400',  'Maria Fernandes', '456123789',   '1997-11-12',  'F',   '5678',   'Porto Alegre',    'Moinhos de Vento',  'Travessa das Flores, 789',    'Brasil',    'Ana Fernandes',      'Lucas Fernandes',    '04567890','7') 
 
 
-INSERT INTO voto (id_voto, eleicao_id_eleicao, tipo_voto, candidato_id_candidato, data_voto, eleitor_id_eleitor)
+INSERT INTO voto (id_voto, eleicao_id_eleicao, tipo_voto, candidato_cd_voto_candidato, data_voto, eleitor_id_eleitor)
 VALUES ('1',  '1',  'branco',      '',   '10:30, 2023-07-01',   '1234567'),
 	     ('2',  '2',  'candidato',   '7',  '14:45, 2023-08-17',   '9876543'), 
        ('3',  '3',  'candidato',   '1',  '11:15, 2023-09-13',   '2468135'),

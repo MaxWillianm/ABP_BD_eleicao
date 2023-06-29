@@ -74,19 +74,20 @@ CREATE TABLE eleitor (
   mae_eleitor VARCHAR(100) NULL,
   pai_eleitor VARCHAR(100) NULL,
   cep_eleitor VARCHAR(8) NOT NULL,
+  cd_voto_candidato INT NULL,
   PRIMARY KEY (id_eleitor))
 
 CREATE TABLE voto (
   id_voto INT NOT NULL,
   tipo_voto VARCHAR(45) NOT NULL,
   data_voto VARCHAR(45) NOT NULL,
-  candidato_id_candidato INT NULL,
+  candidato_cd_voto_candidato INT NULL,
   eleicao_id_eleicao INT NOT NULL,
   eleitor_id_eleitor INT NOT NULL,
   PRIMARY KEY (id_voto),
   CONSTRAINT fk_voto_candidato
-    FOREIGN KEY (candidato_id_candidato)
-    REFERENCES candidato (id_candidato)
+    FOREIGN KEY (candidato_cd_voto_candidato)
+    REFERENCES candidato (cd_voto_candidato)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_voto_eleicao
