@@ -1,5 +1,5 @@
 
-CREATE TABLE eleicaoabp;
+CREATE DATABASE eleicaoabp;
 USE eleicaoabp ;
 
 CREATE TABLE eleicaoabp.instituicao (
