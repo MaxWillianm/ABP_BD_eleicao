@@ -1,5 +1,5 @@
 
-CREATE TABLE eleicaoabp DEFAULT CHARACTER SET utf8mb4 ;
+CREATE TABLE eleicaoabp;
 USE eleicaoabp ;
 
 CREATE TABLE eleicaoabp.instituicao (
