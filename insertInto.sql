@@ -10,13 +10,31 @@ VALUES  ('12345678', 'Sao Paulo',      'SP',   'Brasil',  'Rua Alegria,123',    
 
 -- 2 funcionando
 INSERT INTO eleitor (id_eleitor, cpf_eleitor, nome_eleitor, rg_eleitor, data_nasc_eleitor, sexo_eleitor, numero_eleitor, zona_eleitor, cidade_eleitor, bairro_eleitor, endereco_eleitor, nacionalidade_eleitor, mae_eleitor, pai_eleitor, cep_eleitor)
-VALUES ('1234567', '85296374100', 'Mateus Rodrigues',  '369852147',    '1991-06-18',    'M',   '234567891',   '1234',   'Brasília',      'Asa Sul',       'Quadra 302, Bloco A',        'Brasil',   'Carla Rodrigues',   'Rafael Rodrigues', '70800010'),
-       ('9876543', '74185296300', 'Isabela Lima',      '852963741',    '1993-09-30',    'F',   '567891234',   '5678',   'Manaus',        'Adrianópolis',  'Rua das Acácias, 456',       'Brasil',   'Maria Lima',        'Guilherme Lima',   '69057002'),
-       ('2468135', '96374185200', 'Gustavo Castro',    '741852963',    '1996-03-07',    'M',   '891234567',   '9012',   'Curitiba',      'Batel',         'Avenida 7 de Setembro, 123', 'Brasil',   'Renata Castro',     'Marcelo Castro',   '80250210'),
-       ('5587955', '85274196300', 'Julia Santos',      '741963852',    '1998-05-14',    'F',   '432198765',   '3456',   'Belém',         'Nazaré',        'Rua dos Lírios, 789',        'Brasil',   'Camila Santos',     'Ricardo Santos',   '66035450'),
-       ('3498499', '96385274100', 'Guilherme Ribeiro', '852741963',    '1987-11-29',    'M',   '876543219',   '7890',   'Recife',        'Boa Viagem',    'Rua das Palmeiras, 987',     'Brasil',   'Patricia Ribeiro',  'Eduardo Ribeiro',  '51020220'),
-       ('7794177', '74196385200', 'Fernanda Costa',    '963852741',    '1994-07-03',    'F',   '219876543',   '2345',   'Salvador',      'Barra',         'Avenida Oceânica, 321',      'Brasil',   'Amanda Costa',      'Daniel Costa',     '40140130'),
-       ('4321098', '85274196300', 'Rafaela Souza',     '741963852',    '1999-02-22',    'F',   '765432198',   '5678',   'Florianópolis', 'Centro',        'Rua XV de Novembro, 789',    'Brasil',   'Juliana Souza',     'André Souza',      '88010400')
+VALUES 
+('2345678', '36985274100', 'Lucas Ferreira', '147852369', '1990-12-25', 'M', '345678912', '4321', 'São Paulo', 'Moema', 'Rua dos Jardins, 123', 'Brasil', 'Ana Ferreira', 'Ricardo Ferreira', '04516001'),
+('8765432', '96374185200', 'Gabriela Almeida', '963852741', '1995-08-10', 'F', '678912345', '7890', 'Rio de Janeiro', 'Copacabana', 'Avenida Atlântica, 456', 'Brasil', 'Mariana Almeida', 'André Almeida', '22070001'),
+('5436109', '85296374100', 'Pedro Santos', '852741963', '1992-04-05', 'M', '901234567', '9012', 'Porto Alegre', 'Moinhos de Vento', 'Rua Padre Chagas, 789', 'Brasil', 'Carolina Santos', 'Fernando Santos', '90570001'),
+('9866543', '74185296300', 'Mariana Silva', '741963852', '1997-11-15', 'F', '234567891', '2345', 'Belo Horizonte', 'Savassi', 'Avenida Getúlio Vargas, 123', 'Brasil', 'Ana Silva', 'Rodrigo Silva', '30112012'),
+('2609876', '96374185200', 'Gustavo Oliveira', '852963741', '1993-02-28', 'M', '567891234', '5678', 'Fortaleza', 'Meireles', 'Rua Monsenhor Tabosa, 456', 'Brasil', 'Patricia Oliveira', 'Antonio Oliveira', '60165001'),
+('7654321', '85274196300', 'Isabela Pereira', '741852963', '1998-06-20', 'F', '891234567', '7890', 'Salvador', 'Ondina', 'Avenida Oceânica, 789', 'Brasil', 'Carla Pereira', 'Marcos Pereira', '40170010'),
+('9876543', '96385274100', 'Rafaela Castro', '963741852', '1994-03-12', 'F', '123456789', '9012', 'Recife', 'Boa Viagem', 'Rua dos Navegantes, 123', 'Brasil', 'Patricia Castro', 'Fernando Castro', '51021001'),
+('8766432', '74196385200', 'Diego Souza', '741852963', '1999-09-08', 'M', '456789123', '3456', 'Curitiba', 'Centro Cívico', 'Avenida Cândido de Abreu, 456', 'Brasil', 'Camila Souza', 'Marcelo Souza', '80530000'),
+('5432109', '85274196300', 'Larissa Lima', '852741963', '1988-07-23', 'F', '789012345', '5678', 'Florianópolis', 'Jurerê Internacional', 'Rua das Palmeiras, 789', 'Brasil', 'Carolina Lima', 'Ricardo Lima', '88053400'),
+('2106876', '96374185200', 'Fernando Santos', '963741852', '1991-10-02', 'M', '901234567', '1234', 'Porto Alegre', 'Belém Novo', 'Avenida Beira Rio, 123', 'Brasil', 'Mariana Santos', 'Rodrigo Santos', '91780001'),
+('7654621', '74185296300', 'Amanda Costa', '741852963', '1996-04-17', 'F', '234567891', '5678', 'Manaus', 'Ponta Negra', 'Avenida Coronel Teixeira, 456', 'Brasil', 'Carla Costa', 'Ricardo Costa', '69037000'),
+('1236567', '85296374100', 'Leonardo Almeida', '852963741', '1993-01-08', 'M', '567891234', '7890', 'Recife', 'Boa Viagem', 'Rua dos Navegantes, 789', 'Brasil', 'Patricia Almeida', 'Antonio Almeida', '51021001'),
+('9126643', '74185296300', 'Luana Lima', '741852963', '1998-08-23', 'F', '901234567', '2345', 'Salvador', 'Barra', 'Avenida Oceânica, 123', 'Brasil', 'Carla Lima', 'Marcos Lima', '40140010'),
+('5415109', '96374185200', 'Guilherme Ribeiro', '963741852', '1992-05-18', 'M', '234567891', '9012', 'Curitiba', 'Batel', 'Avenida 7 de Setembro, 456', 'Brasil', 'Renata Ribeiro', 'Marcelo Ribeiro', '80240000'),
+('2109876', '85274196300', 'Juliana Souza', '852741963', '1997-03-03', 'F', '567891234', '3456', 'Belém', 'Nazaré', 'Rua dos Lírios, 789', 'Brasil', 'Camila Souza', 'Ricardo Souza', '66035400'),
+('7656321', '96385274100', 'Rafael Rodrigues', '963852741', '1989-12-10', 'M', '901234567', '5678', 'Florianópolis', 'Centro', 'Rua XV de Novembro, 123', 'Brasil', 'Juliana Rodrigues', 'André Rodrigues', '88010000'),
+('1234567', '74196385200', 'Carolina Ferreira', '741963852', '1994-07-25', 'F', '234567891', '7890', 'São Paulo', 'Moema', 'Rua dos Jardins, 456', 'Brasil', 'Ana Ferreira', 'Ricardo Ferreira', '04516002'),
+('9811543', '96374185200', 'Rodrigo Almeida', '963741852', '1990-02-11', 'M', '567891234', '1234', 'Rio de Janeiro', 'Copacabana', 'Avenida Atlântica, 789', 'Brasil', 'Mariana Almeida', 'André Almeida', '22070002'),
+('5432111', '85296374100', 'Mariana Silva', '852963741', '1995-09-26', 'F', '901234567', '5678', 'Porto Alegre', 'Moinhos de Vento', 'Rua Padre Chagas, 123', 'Brasil', 'Patricia Silva', 'Fernando Silva', '90570002'),
+('2102876', '74185296300', 'Lucas Santos', '741852963', '1998-04-05', 'M', '234567891', '7890', 'Belo Horizonte', 'Savassi', 'Avenida Getúlio Vargas, 456', 'Brasil', 'Ana Santos', 'Rodrigo Santos', '30112013'),
+('7656311', '96374185200', 'Isabela Oliveira', '963741852', '1993-11-15', 'F', '567891234', '2345', 'Fortaleza', 'Meireles', 'Rua Monsenhor Tabosa, 789', 'Brasil', 'Patricia Oliveira', 'Antonio Oliveira', '60165002'),
+('1264567', '85274196300', 'Gustavo Pereira', '852741963', '1997-06-22', 'M', '901234567', '9012', 'Salvador', 'Ondina', 'Avenida Oceânica, 321', 'Brasil', 'Carla Pereira', 'Marcos Pereira', '40170020'),
+('9831543', '74196385200', 'Rafaela Castro', '741963852', '1992-03-05', 'F', '234567891', '5678', 'Recife', 'Boa Viagem', 'Rua dos Navegantes, 987', 'Brasil', 'Patricia Castro', 'Fernando Castro', '51021002'),
+('5436119', '85274196300', 'Diego Souza', '852741963', '1997-09-30', 'M', '567891234', '7890', 'Curitiba', 'Centro Cívico', 'Avenida Cândido de Abreu, 789', 'Brasil', 'Camila Souza', 'Marcelo Souza', '80530000');
 
 -- 3 funcionando
 INSERT INTO eleicao (id_eleicao, tipo_eleicao, cidade_eleicao, instituicao_id_instituicao, bairro_eleicao, estado_eleicao, pais_eleicao, cep_eleicao, endereco_eleicao, data_inicio_eleicao, data_fim_eleicao) 
